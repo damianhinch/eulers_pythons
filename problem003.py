@@ -55,12 +55,11 @@ def is_prime(n):
     print(True)        
     return True
 ####################################################
-from time import time
 #number = raw_input("Enter  number ")
 #number = 13195
 number = 600851475143
 number2 = number * 123456789123456789
-number3 = number ** 5  #approx 60 0s 
+number3 = number ** 2  #approx 60 0s 
 
 highestPFactor = highestPrimeFactor(number)
 print("Highest prime of %s is : %s"  % (number, highestPFactor))
