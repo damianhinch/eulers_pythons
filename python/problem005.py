@@ -10,3 +10,19 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 @author: damianhinch
 """
+
+num = 20
+found = False
+counter = num
+
+while found != True :
+    counter = counter + num
+    for i in range(num -1, 2, -1):
+        if (counter % i) != 0:
+            found = False
+            break
+        else:
+            found = True
+
+print(counter)
+
